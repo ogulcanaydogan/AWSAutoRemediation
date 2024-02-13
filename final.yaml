@@ -5,7 +5,7 @@ Description: |
 Parameters:
   KeyName:
     Type: AWS::EC2::KeyPair::KeyName
-    Default: ziya
+    Default: KeyPair
   IAMRole:
     Type: String
     Default: arn:aws:iam::621627302500:role/LambdaAutoScaling
@@ -214,7 +214,7 @@ Resources:
       FifoTopic: false
       Subscription: 
         - Protocol: email
-          Endpoint: yusuf.asici@gmail.com
+          Endpoint: ogulcanaydogan@hotmail.com
       Tags: 
         - Key: Name
           Value: AutoScalingSNS
